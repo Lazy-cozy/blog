@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog site",
+  "main": "index.js",
+  "author": "khalid",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "cd Blog-fe && yarn run dev",
+    "dev": "concurrently \"yarn server\" \"yarn run client\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  }
+}
